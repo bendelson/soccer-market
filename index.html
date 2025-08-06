@@ -35,7 +35,7 @@
     <p>Ronaldo, Messi, Neymar, Thomas Müller: All in the US or Qatar. Throw insane figures around, how much was spent for a player.</p>
     <p>Here comes an anecdote about the soccer world and how it has changed with big money coming in.</p>
 
-    <!-- First Flourish chart loads immediately -->
+    <!-- First Flourish chart -->
     <div class="flourish-embed flourish-chart small-embed" data-src="visualisation/24557878"></div>
 
     <p>More analysis or conclusion here.</p>
@@ -44,30 +44,16 @@
     <p>This is now showing the relative development. So for every league, the average price of a player is set to the index value of 100%.</p>
     <p>Also, the graph shows the inflation, to show the relationship between soccer economics and the real world.</p>
 
-    <!-- Placeholder for delayed charts -->
-    <div id="delayed-charts" class="grid-container" style="display: none;"></div>
+    <!-- Four charts in 2x2 grid -->
+    <div class="grid-container">
+      <div class="flourish-embed flourish-chart grid-item" data-src="visualisation/24537499"></div>
+      <div class="flourish-embed flourish-chart grid-item" data-src="visualisation/24537536"></div>
+      <div class="flourish-embed flourish-chart grid-item" data-src="visualisation/24531990"></div>
+      <div class="flourish-embed flourish-chart grid-item" data-src="visualisation/24537456"></div>
+    </div>
   </article>
 
-  <!-- Load Flourish script once -->
+  <!-- Only include Flourish script once, at the bottom -->
   <script src="https://public.flourish.studio/resources/embed.js"></script>
-
-  <!-- Delayed loading of charts -->
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      setTimeout(() => {
-        const delayed = document.getElementById('delayed-charts');
-        delayed.innerHTML = `
-          <div class="flourish-embed flourish-chart grid-item" data-src="visualisation/24537499"></div>
-          <div class="flourish-embed flourish-chart grid-item" data-src="visualisation/24537536"></div>
-          <div class="flourish-embed flourish-chart grid-item" data-src="visualisation/24531990"></div>
-          <div class="flourish-embed flourish-chart grid-item" data-src="visualisation/24537456"></div>
-        `;
-        delayed.style.display = 'grid';
-        if (window.Flourish && typeof window.Flourish.renderAll === 'function') {
-          window.Flourish.renderAll();
-        }
-      }, 5000); // delay in milliseconds
-    });
-  </script>
 </body>
 </html>
