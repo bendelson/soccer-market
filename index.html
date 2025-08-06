@@ -6,6 +6,7 @@
   <title>The global soccer inflation</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    /* Grid for multiple charts */
     .grid-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -20,11 +21,24 @@
 
     .flourish-embed {
       width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
 
-    .first-chart-container {
-      max-width: 400px;
+    /* Responsive container for the first chart */
+    .flourish-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
       margin: 2em auto;
+    }
+
+    .flourish-wrapper::before {
+      content: "";
+      display: block;
+      padding-top: 35%; /* Controls height: lower % = shorter chart */
     }
   </style>
 </head>
@@ -34,7 +48,8 @@
     <p>Ronaldo, Messi, Neymar, Thomas Müller: All in the US or Qatar. Throw insane figures around, how much was spent for a player.</p>
     <p>Here comes an anecdote about the soccer world and how it has changed with big money coming in.</p>
 
-    <div class="first-chart-container">
+    <!-- First Flourish chart (smaller height) -->
+    <div class="flourish-wrapper">
       <div class="flourish-embed flourish-chart" data-src="visualisation/24557878"></div>
     </div>
 
@@ -53,16 +68,16 @@
       <div class="flourish-embed flourish-chart grid-item" data-src="visualisation/24531990"></div>
       <div class="flourish-embed flourish-chart grid-item" data-src="visualisation/24537456"></div>
     </div>
+
     <h2>Next part</h2>
     <p>Here continues the text about soccer and the financial development of the market.</p>
+
     <div class="grid-container">
       <div class="flourish-embed flourish-chart grid-item" data-src="visualisation/24537770"></div>
       <div class="flourish-embed flourish-chart grid-item" data-src="visualisation/24537589"></div>
       <div class="flourish-embed flourish-chart grid-item" data-src="visualisation/24537805"></div>
       <div class="flourish-embed flourish-chart grid-item" data-src="visualisation/24537698"></div>
     </div>
-
-    
   </article>
 
   <!-- Flourish embed script at the end -->
