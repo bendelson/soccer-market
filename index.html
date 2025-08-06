@@ -18,6 +18,10 @@
       width: 100%;
       height: 500px;
     }
+    .small-embed {
+      height: 300px; /* or try 250px or 50vh if you want it proportional */
+      max-width: 100%;
+    }
   </style>
 </head>
 <body>
@@ -26,14 +30,15 @@
     <p>Ronaldo, Messi, Neymar, Thomas Müller: All in the US or Qatar. Throw insane figures around, how much was spent for a player.</p>
 
     <!-- First Flourish chart -->
-    <div class="flourish-embed flourish-chart" data-src="visualisation/24557878">
+    <div class="flourish-embed flourish-chart small-embed" data-src="visualisation/24557878"></div>
       <script src="https://public.flourish.studio/resources/embed.js"></script>
     </div>
 
     <p>More analysis or conclusion here.</p>
 
     <h2>The soccer inflation</h2>
-
+    <p>This is now showing the relative development. So for every league, the average price of a player is set to the index value of 100%. </p>
+    <p>Also, the graph shows the inflation, to show the relationship between soccer economics and the real world.</p>
     <div class="grid-container">
       <div class="flourish-embed flourish-chart grid-item" data-src="visualisation/24537499"></div>
       <div class="flourish-embed flourish-chart grid-item" data-src="visualisation/24537536"></div>
