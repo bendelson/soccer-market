@@ -16,19 +16,14 @@
 
     .grid-item {
       width: 100%;
-      height: 500px;
     }
 
-    /* General Flourish embed reset */
     .flourish-embed {
       width: 100%;
-      height: 500px;
     }
 
-    /* Make only the first embed smaller */
-    .first-chart {
-      width: 50%;
-      height: 250px;
+    .first-chart-container {
+      max-width: 600px; /* Or smaller, like 400px */
       margin: 2em auto;
     }
   </style>
@@ -39,9 +34,12 @@
     <p>Ronaldo, Messi, Neymar, Thomas Müller: All in the US or Qatar. Throw insane figures around, how much was spent for a player.</p>
     <p>Here comes an anecdote about the soccer world and how it has changed with big money coming in.</p>
 
-    <!-- First (smaller) Flourish chart -->
-    <div class="flourish-embed flourish-chart first-chart" data-src="visualisation/24557878"></div>
+    <div class="first-chart-container">
+      <div class="flourish-embed flourish-chart" data-src="visualisation/24557878"></div>
+    </div>
 
+    <p>More analysis or conclusion here.</p>
+    <p>More analysis or conclusion here.</p>
     <p>More analysis or conclusion here.</p>
 
     <h2>The soccer inflation</h2>
