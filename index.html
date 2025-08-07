@@ -28,13 +28,23 @@
 
     /* White container for the article ideally changed to only the paragraphs */
     .content-wrapper {
-      background-color: white;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 2em;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background-color: transparent;
+      padding: 0;
+      box-shadow: none;
     }
-    
+    article p,
+    article h1,
+    article h2,
+    article img,
+    article .flourish-embed,
+    article .grid-container {
+      background-color: white;
+      padding: 1.5em;
+      margin: 1.5em auto;
+      border-radius: 10px;
+      max-width: 800px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
     .grid-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -102,7 +112,7 @@
     <p>Haaland's team mates from Manchester City on average are worth 38.2 million euros today.</p>
     <p>Twenty years ago, the average player of ManCity was worth 2.8 million euros.</p>
     <p>So today, the players are worth fourteen times the amount from twenty years ago.</p>
-    <p>Obviously, players today aren't fourteen times as good as they were twenty years ago. The increase rather has to do with the involvement of big investors and the growth of soccer economy overall.</p>
+    <p>Arguably, players today probably aren't fourteen times as good as they were twenty years ago. The increase rather has to do with the involvement of big investors and the growth of soccer economy overall.</p>
     <h2>The soccer inflation</h2>
     <p>And the increase in player's values is not alone an english phenomenon, as the following graph shows.</p>
     <p>It's what happened in all the big european soccer leagues since 2004: in Italy, France, Spain and Germany.</p>
